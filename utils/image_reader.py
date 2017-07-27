@@ -20,12 +20,12 @@ pascal_mean = np.array([102.93, 111.36, 116.52])
 label_margin = 186
 
 
-def load_img_array(fname, grayscale=False, target_size=None, dim_ordering='default'):
+def load_img_array(fname, grayscale=False, target_size=None, data_format='channels_last'):
     """Loads and image file and returns an array."""
     img = load_img(fname,
                    grayscale=grayscale,
                    target_size=target_size)
-    x = img_to_array(img, dim_ordering=dim_ordering)
+    x = img_to_array(img, data_format=data_format)
     return x
 
 
