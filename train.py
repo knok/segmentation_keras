@@ -7,7 +7,7 @@ import shutil
 
 import click
 import numpy as np
-from keras import callbacks, optimizers
+from tensorflow.contrib.keras import callbacks, optimizers
 from IPython import embed
 
 from model import get_frontend, add_softmax
