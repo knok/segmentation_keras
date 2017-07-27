@@ -5,7 +5,7 @@ from collections import namedtuple
 import click
 import numpy as np
 from IPython import embed
-from keras.preprocessing.image import (
+from tensorflow.contrib.keras.python.keras.preprocessing.image import (
     load_img, img_to_array,
     flip_axis)
 
